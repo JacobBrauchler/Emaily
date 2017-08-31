@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 // import { connect } from 'react-redux';
 
 class Dashboard extends Component {
   render() {
     return (
-      <div className="collection">
-        <a href="/surveys" className="collection-item">Survey1</a>
-        <a href="/surveys" className="collection-item">Survey2</a>
-        <a href="/surveys" className="collection-item">Survey3</a>
-        <a href="/surveys" className="collection-item">Survey4</a>
+      <div >
+        Dashboard
+        <div className="fixed-action-btn">
+          <Link to="/surveys/new" className="btn-floating btn-large red">
+            <i className="large material-icons">add</i>
+          </Link>
+        </div>
       </div>
     );
   }
